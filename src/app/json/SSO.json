@@ -1,0 +1,23 @@
+{
+    "SSO": [{
+            "name": "WkeSSO",
+            "cid": 3822,
+            "api": "Account/WKESSOInfo"
+        },
+        {
+            "name": "FacebookSSO",
+            "cid": 3823,
+            "api": "Account/FacebookSSO"
+        },
+        {
+            "name": "GoogleSSO",
+            "cid": 3824,
+            "api": "Account/GoogleSSOInfo"
+        },
+        {
+            "name": "Web Author",
+            "cid": 1,
+            "api": null
+        }
+    ]
+}

@@ -1,0 +1,253 @@
+.APPbar {
+    top: 0;
+    width: 100%;
+
+    .home {
+        position: relative;
+        background-color: #ffffff;
+        padding: 0.5px 14px;
+        padding-right: 64px;
+        padding-top: 4px;
+        line-height: 50px;
+        overflow: hidden;
+        z-index: 2;
+        border-bottom: 1px solid #e5e5e5;
+        height: var(--appbar-container-height);
+
+        .opensidebar-contain {
+            height: var(--appbar-height);
+
+            .opensidebar-icon {
+                font-size: 18px;
+                color: #fff;
+                border: none;
+                display: inline-block;
+                padding: 8px 16px;
+                vertical-align: middle;
+                overflow: hidden;
+                text-decoration: none;
+                color: inherit;
+                background-color: inherit;
+                text-align: center;
+                cursor: pointer;
+                white-space: nowrap;
+
+                &:hover {
+                    background: #c4c4c4;
+                }
+            }
+        }
+
+        .underline-right:after {
+            content: '';
+            width: 3px;
+            height: 3px;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            z-index: 5;
+        }
+
+        .underline-right:focus:after, .underline-right:hover:after, .app-selected:after {
+            width: 100%;
+            height: 3px;
+        }
+
+        .app, .app-selected {
+            color: #000000;
+            padding: 0px 14px;
+            margin-right: 16px;
+            letter-spacing: 3px;
+            position: relative;
+            z-index: 2;
+            text-decoration: none;
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: transparent;
+            white-space: nowrap;
+        }
+
+        .underline-right:focus, .underline-right:hover {
+            outline: 0;
+            // color: #8a8aff;
+            -webkit-transition: color 1s ease;
+            -moz-transition: color 1s ease;
+            -ms-transition: color 1s ease;
+            -o-transition: color 1s ease;
+            transition: color 1s ease;
+            cursor: pointer;
+        }
+
+        .underline-right:after, .underline-right:before {
+            -webkit-transition: all 1s ease 0s;
+            -moz-transition: all 1s ease 0s;
+            -ms-transition: all 1s ease 0s;
+            -o-transition: all 1s ease 0s;
+            transition: all 1s ease 0s;
+        }
+
+        .underline-right:hover:after, .underline-right:hover:before, .underline-right:focus:after, .underline-right:focus:before, .app-selected:before, .app-selected:after {
+            outline: 0;
+            background-color: #8a8aff;
+            -webkit-transition: all 1s ease 0s;
+            -moz-transition: all 1s ease 0s;
+            -ms-transition: all 1s ease 0s;
+            -o-transition: all 1s ease 0s;
+            transition: all 1s ease 0s;
+        }
+
+        .login {
+            font-size: 15px;
+            display: inline;
+            line-height: 1.5;
+            padding: 6px 14px;
+            position: relative;
+            color: #fff;
+            top: 10px;
+            background-color: #8a8aff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        .login:hover {
+            background-color: #6666ff;
+        }
+
+        .logoimg {
+            height: var(--appbar-height);
+        }
+
+        .logined-containter {
+            width: 70px;
+
+            div {
+                .yt-icon2 {
+                    display: inline-flex;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    position: relative;
+                    vertical-align: middle;
+                    fill: currentcolor;
+                    stroke: none;
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .icon-member {
+                    pointer-events: none;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .imgicon {
+                    height: var(--appbar-height);
+                    width: 70px;
+                    border-radius: 50%;
+                    object-fit: cover;
+
+                    img {
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 50%;
+                        object-fit: cover;
+
+                        &:hover {
+                            border: 2px solid #0080ff;
+                        }
+                    }
+                }
+
+                .ssoiconplace {
+                    position: absolute;
+                    right: 70px;
+                    bottom: 21px;
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    z-index: 30;
+
+                    img {
+                        border-radius: 50%;
+                        width: 16px;
+                        height: 16px;
+                        z-index: 30;
+                    }
+                }
+            }
+        }
+    }
+
+    .mem-dropdown-content {
+        cursor: auto;
+        color: #000;
+        background-color: #fff;
+        border-radius: 5px;
+        width: 250px;
+        position: absolute;
+        right: 0px;
+        z-index: 9999;
+        background-color: rgb(249, 249, 249);
+        overflow: auto;
+        box-shadow: rgb(0 0 0 / 5%) 0px 8px 16px 0px;
+    }
+
+    .drop {
+        margin-top: -15px;
+        margin-right: 14px;
+    }
+
+    .logined {
+        font-weight: bold;
+        font-size: 25px;
+        display: inline;
+        line-height: 1.5;
+        position: relative;
+        padding: 18px 0px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        width: 145px;
+    }
+
+    .logout {
+        display: block;
+        padding: 10px 0px 12px;
+        width: 100%;
+        background: #e2e2e2;
+        border-radius: 0 0 3px 3px;
+        text-align: center;
+        border-top: 1px solid #D7D7D7;
+
+        &:hover {
+            background: #d2d2d2;
+        }
+    }
+
+    .memcheck {
+        display: block;
+        padding: 10px 0px 12px;
+        width: 100%;
+        background: #e2e2e2;
+        border-radius: 0 0 3px 3px;
+        text-align: center;
+        border-top: 1px solid #D7D7D7;
+    }
+
+    a.mem-text {
+        display: block;
+        color: #000000;
+    }
+
+    .mem-text {
+        padding: 16px 12px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

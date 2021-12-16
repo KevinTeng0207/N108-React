@@ -1,0 +1,140 @@
+.pointer div {
+    flex-basis: 50%;
+    width: 100%;
+    overflow: hidden;
+
+    >img {
+        transition: all 0.4s linear;
+
+        &:hover {
+            transform: translateX(0) scale(1.2);
+        }
+    }
+}
+
+.ytviewct {
+    color: #606060;
+}
+
+.yttitle {
+    margin-top: 8px;
+}
+
+.video-list-thumbs {
+}
+
+.video-list-thumbs > li {
+    margin-bottom: 12px;
+}
+
+.video-list-thumbs > li:last-child {
+}
+
+.video-list-thumbs > li > a {
+    display: block;
+    position: relative;
+    // background-color: #111;
+    color: #000000;
+    padding: 8px;
+    border-radius: 3px;
+    transition: all 500ms ease-in-out;
+    border-radius: 4px;
+}
+
+.video-list-thumbs h2 {
+    bottom: 0;
+    font-size: 18px;
+    // height: 33px;
+    font-weight: normal;
+    margin: 8px 0 0;
+}
+
+.video-list-thumbs .glyphicon-play-circle {
+    font-size: 60px;
+    opacity: 0.6;
+    position: absolute;
+    right: 39%;
+    top: 31%;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    transition: all 500ms ease-in-out;
+}
+
+.video-list-thumbs > li > a:hover .glyphicon-play-circle {
+    color: #000000;
+    opacity: 1;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.video-list-thumbs .duration {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    left: 12px;
+    line-height: 13px;
+    padding: 2px 3px 1px;
+    position: absolute;
+    top: 12px;
+    transition: all 500ms ease;
+}
+
+.video-list-thumbs > li > a:hover .duration {
+    background-color: #000;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .video-list-thumbs .glyphicon-play-circle {
+        font-size: 35px;
+        right: 36%;
+        top: 27%;
+    }
+
+    .video-list-thumbs h2 {
+        bottom: 0;
+        font-size: 12px;
+        height: 22px;
+        margin: 8px 0 0;
+    }
+}
+
+.course_title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    font-size: 20px;
+}
+
+.course_top, .ytfcontainer {
+    margin: 32px 32px;
+}
+
+.course_content {
+    padding: 10px;
+}
+
+.course_top >div {
+    background-color: #fbfbfb;
+    box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 50%);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.course_content >div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.course_content >div >span {
+    background-color: #2761b8;
+    display: block;
+    border-radius: 5px;
+    padding: 2px 8px;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.course_content >div >div {
+    margin-left: 10px;
+}

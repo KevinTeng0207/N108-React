@@ -1,0 +1,227 @@
+#watch {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f9f9f9;
+    margin-top: 64px;
+    overflow: hidden;
+    // padding: 5px 40px 5px 40px;
+}
+
+#videocomment {
+    height: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: hidden;
+    padding: 0px 64px;
+
+    &:hover {
+        overflow-y: auto;
+        overflow-y: overlay; // for chrome 滾動輪不影響寬度
+    }
+}
+
+#note {
+    flex: 0 0 auto;
+    height: 100%;
+    border-left: 1px solid #e5e5e5;
+    width: 28%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+}
+
+#player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: var(--maxwidth);
+    max-height: var(--maxheight);
+    // border: 4px solid #f00;
+}
+
+#videowrapper {
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    // border: 5px solid orange;
+}
+
+#videodes {
+    padding: 20px 0 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.examvideotool {
+    position: absolute;
+    right: 5px;
+    top: 40px;
+}
+
+#notetitle {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0px;
+    margin: 0px 16px 8px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#allnote {
+    flex: 1 1 auto;
+    overflow-y: hidden;
+    // position: relative;
+}
+
+#preview {
+    flex: 0 0 auto;
+    height: 35%;
+    // padding: 0 16px;
+    border-top: 1px solid #666666;
+    // background-color: #fff;
+    // border: 1px solid red;
+    overflow-y: auto;
+}
+
+#mdpreview {
+    // margin-bottom: 64px;
+    margin: 8px 16px 64px;
+}
+
+.notescroll {
+    height: calc(100% - 52px);
+    overflow-y: auto;
+    padding-bottom: 32px;
+}
+
+.edu-vcblock {
+    display: block;
+    width: 100%;
+    max-width: var(--maxwidth);
+    max-height: var(--maxheight);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+}
+
+.noteimg {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 2px 4px 10px 4px #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none;
+}
+
+.noteposition {
+    position: absolute;
+    bottom: 16px;
+    right: 32px;
+    height: 48px;
+    width: 48px;
+}
+
+.examposition {
+    position: absolute;
+    bottom: 16px;
+    right: 25px;
+    height: 48px;
+    width: 48px;
+}
+
+.noteimg:hover {
+    background-color: #f2f2f2;
+}
+
+.previewposition {
+    position: absolute;
+    bottom: 16px;
+    right: 96px;
+    height: 48px;
+    width: 48px;
+}
+
+.edu-yttitle {
+    font-size: 18px;
+}
+
+.edu-ytviewct {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #606060;
+}
+
+.commentct {
+    margin: 0 0 24px 0;
+    font-size: 16px;
+}
+
+.edu-note {
+    margin: 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 8px;
+}
+
+.secdel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectitle {
+    display: flex;
+    align-items: center;
+}
+
+.tosec {
+    // border: 1px solid #065fd4;
+    margin: 0px 8px 0px 0px;
+    color: #fff;
+    padding: 0px 2px;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: #6aa8fb;
+}
+
+.github {
+    text-align: left;
+    padding: 10px 10px;
+    margin: 5px 0px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #cccccc;
+}
+
+.previewtitle {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0 16px;
+    top: 0;
+    position: sticky;
+    background-color: #FFc253;
+    z-index: 100;
+}
+
+.note-textarea {
+    overflow-y: hidden;
+}
+
+.padding-right {
+    padding-right: 5px;
+}

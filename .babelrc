@@ -1,0 +1,15 @@
+{
+    "presets": [
+      [
+        "env",
+        {
+          "debug": false,
+          "useBuiltIns": true
+        }
+      ],
+      "react",
+      "stage-0"
+    ],
+      "plugins": []
+  }
+  

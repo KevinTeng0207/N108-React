@@ -1,0 +1,28 @@
+{
+    "school": [
+        {
+            "name": "Elementary",
+            "cid": 5
+        },
+        {
+            "name": "Secondary",
+            "cid": 396
+        },
+        {
+            "name": "High_senior",
+            "cid": 2359
+        },
+        {
+            "name": "High_senior_elective",
+            "cid": 2920
+        },
+        {
+            "name": "High_senior_skill",
+            "cid": 1141
+        },
+        {
+            "name": "High_senior_mix",
+            "cid": 1937
+        }
+    ]
+}

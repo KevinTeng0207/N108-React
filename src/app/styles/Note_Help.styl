@@ -1,0 +1,116 @@
+.help-map {
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    position: fixed;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+
+.help-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    outline: 0;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+    z-index: 999;
+}
+
+.help-header {
+    background-color: #f8f8f8;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 8px 15px;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    // display: inline;
+}
+
+.help-body {
+    padding: 20px 16px 10px 16px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.help-block {
+    // border-color: #ddd;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    margin: 0px 0px 25px 0px;
+    // padding: 22px;
+    position: relative;
+}
+
+.help-title {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.helpcontent-header {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 8px 15px;
+}
+
+.close {
+    float: right;
+    position: absolute;
+    right: 1%;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    // text-shadow: 0 1px 0 #fff;
+    opacity: 0.2;
+    background: 0 0;
+    padding: 0;
+    border: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.help-table {
+    width: 100%;
+    padding: 12px;
+}
+
+.help-table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    padding: 4px;
+    text-align: left;
+}
+
+.help-table>tbody>tr>td {
+    padding: 4px;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
+
+.latex-table>thead>tr>th {
+    vertical-align: middle;
+    text-align: left;
+}
+
+.latex-table>tbody>tr>td {
+    vertical-align: middle;
+    text-align: left;
+    overflow-wrap: break-word;
+    border: 1px solid #dfe2e5;
+    padding: 8px 8px;
+}
+
+.lookmore {
+    color: #55aaff;
+    text-decoration: underline;
+    position: absolute;
+    bottom: -6%;
+    right: 2%;
+}

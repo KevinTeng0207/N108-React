@@ -1,0 +1,601 @@
+// exam
+.problem {
+    margin: 40px 10px;
+    width: 100%;
+    height: auto;
+}
+
+.problem-containter {
+    position: relative;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin: 40px 50px;
+    // width: 1100px;
+    background-color: #ffffff;
+}
+
+.issue {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.btnlist {
+    width: 600px;
+    margin-bottom: 36px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-bottom: 0;
+    font-size: 25px;
+    line-height: 20px;
+    color: #333333;
+    text-align: center;
+    text-shadow: 0 1px 1px rgb(255 255 255);
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    background-repeat: repeat-x;
+    border: 1px solid #cccccc;
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-bottom-color: #b3b3b3;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgb(255 255 255), 0 1px 2px rgb(0 0 0 / 5%);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.btn:hover {
+    color: #333333;
+    text-decoration: none;
+    background-color: #e6e6e6;
+    background-position: 0 -15px;
+    -webkit-transition: background-position 0.1s linear;
+    -moz-transition: background-position 0.1s linear;
+    -ms-transition: background-position 0.1s linear;
+    -o-transition: background-position 0.1s linear;
+    transition: background-position 0.1s linear;
+}
+
+.btn-selected {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-bottom: 0;
+    font-size: 25px;
+    line-height: 20px;
+    color: #333333;
+    text-align: center;
+    text-shadow: 0 1px 1px rgb(255 255 255);
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #ff8080;
+    background-image: linear-gradient(to bottom, #ffffff, #ff8080);
+    background-repeat: repeat-x;
+    border: 1px solid #cccccc;
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-bottom-color: #b3b3b3;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgb(255 255 255), 0 1px 2px rgb(0 0 0 / 5%);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.exambtn-list {
+    position: relative;
+}
+
+.submit {
+    position: absolute;
+    right: 25%;
+}
+
+.next {
+    position: absolute;
+    right: 25%;
+}
+
+.back {
+    position: absolute;
+    left: 25%;
+}
+
+.yes {
+    border: 3px solid;
+    border-color: #00ff00 #4EFEB3 #00DB00;
+}
+
+.no {
+    border: 3px solid;
+    border-color: #FF0000 #FF5151 #CE0000;
+}
+
+.inputa {
+    top: 0px;
+    left: 0px;
+}
+
+.outputa {
+    top: 35px;
+    left: 0px;
+}
+
+.mouse:hover {
+    cursor: pointer;
+}
+
+.wdetail, .ndetail {
+    bottom: 35px;
+    right: 0px;
+}
+
+.add_detail {
+    bottom: 5px;
+    right: 0px;
+}
+
+.add_detail, .wdetail, .inputa, .outputa {
+    margin: 10px 6px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #898989;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 16px;
+    position: absolute;
+    font-family: normal;
+}
+
+.wdetail {
+    background: #2693ff;
+}
+
+.ndetail {
+    margin: 10px 6px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    color: #000000;
+    // background: #ff0080;
+}
+
+.wdetail:hover, .detailsubmit:hover, .detailch:hover {
+    background: #0071e1;
+}
+
+.add_detail {
+    background: rgba(255, 50, 0, 0.6);
+}
+
+.add_detail:hover {
+    background: rgba(200, 50, 0, 0.9);
+}
+
+.detailoutsidewrapper {
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    position: fixed;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.detailcontentwrapper {
+    position: fixed;
+    top: 18.5%;
+    bottom: 18.5%;
+    z-index: 999;
+}
+
+.total {
+    // height: calc(100vh);
+    overflow-y: overlay; // for chrome 滾動輪不影響寬度
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.detailcontent {
+    // min-height: 500px;
+    min-width: 800px;
+    max-height: 580px;
+    max-width: 1500px;
+    // padding: 16px 40px;
+    background-color: #ffffff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    outline: 0;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+    position: relative;
+}
+
+.detail-header {
+    background-color: #f8f8f8;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 8px 15px;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    // display: inline;
+}
+
+.detail-body {
+    padding: 8px 16px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.detailinput {
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    overflow-y: hidden;
+    font-size: 20px;
+    resize: none;
+    padding: 1px 2px;
+}
+
+.detailinput:focus {
+    border: 3px solid #555;
+}
+
+.previewtitle {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0 16px;
+    top: 0;
+    position: sticky;
+    background-color: #FFc253;
+}
+
+.Dmarkdown-body {
+    border: 3px solid #ccc;
+    box-sizing: border-box;
+    min-width: 433px;
+    // min-height: 248px;
+    max-height: 550px;
+    margin: 0 auto;
+}
+
+.previewDmarkdown-body {
+    min-height: 200px;
+}
+
+.detailsubmit, .detailch {
+    margin: 10px 6px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #2693ff;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.detailch {
+    float: left;
+}
+
+.detailsubmit {
+    float: right;
+}
+
+.closebtn {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+
+.fullDetail {
+    padding: 8px 8px;
+}
+
+.where {
+    margin-bottom: 0.3em;
+}
+
+.examlist {
+    width: 150%;
+    margin: 15px;
+    border-radius: 16px;
+    padding: 0px 30px;
+    background: url('../image/notegrid.png');
+}
+
+/* ** FONTS ** */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i');
+
+ol.gradient-list {
+    counter-reset: gradient-counter;
+    list-style-type: none;
+    margin: 1.75rem 0;
+    padding-left: 1rem;
+
+    > li {
+        background: white;
+        border-radius: 0 0.5rem 0.5rem 0.5rem;
+        box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+        counter-increment: gradient-counter;
+        margin-top: 1rem;
+        // min-height: 3rem;
+        padding: 1rem 1rem 1rem 3rem;
+        position: relative;
+
+        .examgo {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        div.refschoolname {
+            margin: 0.5rem 0.5rem;
+            font-size: 24px;
+        }
+
+        &:hover {
+            div.refschoolname {
+                text-decoration: underline;
+            }
+        }
+
+        &::before, &::after {
+            background: linear-gradient(135deg, #0080ff 0%, #00ffff 100%);
+            border-radius: 1rem 1rem 0 1rem;
+            content: '';
+            height: 3rem;
+            left: -1rem;
+            overflow: hidden;
+            position: absolute;
+            top: -1rem;
+            width: 3rem;
+        }
+
+        &::before {
+            align-items: flex-end;
+            box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+            content: counter(gradient-counter);
+            color: #1d1f20;
+            display: flex;
+            font: 900 1.5em / 1 'Montserrat';
+            justify-content: flex-end;
+            padding: 0.125em 0.25em;
+            z-index: 1;
+        }
+
+        + li {
+            margin-top: 2rem;
+        }
+
+        .examcount {
+            color: #808080;
+            position: absolute;
+            right: 10px;
+            top: 70%;
+        }
+
+        span {
+            margin: 0px 12px;
+        }
+    }
+}
+
+.examcontainer {
+    padding: 2rem;
+    width: 40%;
+}
+
+.examcontainer2 {
+    width: 80%;
+}
+
+.grade-color-1, .grade-color-2, .grade-color-3 {
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.grade-color-1 {
+    background-color: #DC3D84;
+}
+
+.grade-color-2 {
+    background-color: #00d700;
+}
+
+.grade-color-3 {
+    background-color: #0080ff;
+}
+
+.examschoolinfo {
+    border-radius: 5%;
+    padding: 16px 16px;
+    margin: 0px 100px;
+    background-color: #ffffff;
+    width: 400px;
+    // height: 300px;
+    // position: absolute;
+    // top: 20%;
+    // left: -80%;
+    border: 1px solid #000000;
+
+    div {
+        a {
+            color: #0000ff;
+        }
+    }
+}
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {
+    display: inline;
+}
+
+ul.pagination li div {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+ul.pagination li div:hover:not(.active) {
+    background-color: #ddd;
+}
+
+ul.pagination li div.active {
+    background-color: #2693ff;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination-containter {
+    position: absolute;
+    bottom: 5px;
+    left: 45%;
+}
+
+.book-content {
+    margin: 2.5em auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    small {
+        text-transform: none;
+        display: block;
+        margin: 16px 0;
+        font: 300 20px 'QuickSand', sans-serif;
+        color: #999;
+    }
+}
+
+.bookwrapper {
+    max-width: calc((100% / 4));
+    min-width: 10em;
+}
+
+.book {
+    height: 300px;
+    width: 225px;
+    position: relative;
+    transition: 0.4s ease-in-out;
+    border-radius: 5px 15px 15px 5px;
+    transform-origin: left center 0px;
+    display: inline-block;
+    margin: 32px;
+    perspective: 800px;
+    border-left: 4px solid #000000;
+
+    h4 {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+    }
+
+    &:hover {
+        transform: rotateZ(-8deg);
+    }
+}
+
+.book:hover .book__cover {
+    transform: rotateY(-40deg);
+    z-index: 999;
+    box-shadow: 20px 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+.book__cover {
+    height: 300px;
+    width: 225px;
+    position: absolute;
+    background-color: #c0c0c0;
+    border-radius: 5px 15px 15px 5px;
+    box-shadow: 0 0 5px 1.5px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    transition: 0.5s linear;
+    transform-style: preserve-3d;
+    transform-origin: left center 0px;
+    background-size: 230px 305px;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    h4 {
+        color: #000000;
+    }
+}
+
+.book__detail {
+    background-color: rgba(51, 51, 51, 0.8);
+    margin-top: 100px;
+    padding: 15px;
+    // margin-right: 20px;
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.book__page {
+    height: 100%;
+    width: 225px;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 0;
+    box-shadow: 0 0 5px 1.5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 16px 16px 5px;
+    overflow: hidden;
+}
+
+.book__page.ruled {
+    background: linear-gradient(to bottom, #fbfae8 9px, #e4e4e4 1px);
+    background-size: 100% 10px;
+}
+
+.book__page.squared {
+    background-image: linear-gradient(#e4e4e4 1px, transparent 1px), linear-gradient(90deg, #e4e4e4 1px, transparent 1px);
+    background-size: 10px 10px, 10px 10px, 2px 2px, 2px 2px;
+}
+
+.book__page.dotted {
+    background: linear-gradient(90deg, #fbfae8 10px, transparent 1%) center, linear-gradient(#fbfae8 10px, transparent 1%) center, #999;
+    background-size: 11px 11px;
+}
+
+// .warning-btn1 {
+//     position: absolute;
+//     bottom: 0px;
+//     right: 120px;
+// }
+
+// .warning-btn2 {
+//     position: absolute;
+//     bottom: 0px;
+//     right: 16px;
+// }
+
+.warning-btn1, .warning-btn2 {
+    color: #FFFFFF;
+    background-color: #8080ff;
+    display: inline;
+    width: 130px;
+    color: white;
+    border-radius: 25px;
+    padding: 8px 16px;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+
+    &:hover {
+        background-color: #5757ff;
+    }
+}

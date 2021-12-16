@@ -1,0 +1,215 @@
+@import './githubcss/github-markdown.css';
+
+// /* scrollbar */
+// /* width */
+// ::-webkit-scrollbar {
+// width: 10px;
+// }
+
+// /* Track */
+// ::-webkit-scrollbar-track {
+// background: #f1f1f1;
+// }
+
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+// background: #cfcfcf;
+// }
+
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:active {
+// background: #997;
+// }
+#app {
+    position: absolute;
+    height: 500px;
+    width: 80%;
+}
+
+#video {
+    display: flex;
+    position: relative;
+    height: 100%;
+    // border 5px yellow solid
+}
+
+.ytiframe {
+    float: left;
+    width: 75%;
+    height: 100%;
+    // border: 5px black solid
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.note {
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #ffebee;
+}
+
+.allnote {
+    overflow-y: auto;
+    position: relative;
+    // border: 1px red solid;
+}
+
+.notecolor {
+    background-color: #ccb9bc;
+}
+
+.center {
+    text-align: center;
+}
+
+#focus {
+    color: #ffffff;
+    z-index: -10;
+    background-color: #fff;
+    border: #fff;
+    height: 5px;
+    weight: 5px;
+    position: absolute;
+    top: 0;
+}
+
+.videotool {
+    padding: 3px;
+    border-radius: 10px;
+    background-color: #dedede;
+}
+
+.smallmargin {
+    margin: 5px;
+}
+
+.secdel {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5%;
+    align-items: center;
+    // border: 1px #000 solid
+}
+
+.sectitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.del {
+    border-radius: 5px;
+
+    &:hover {
+        background-color: #ff6f6f;
+    }
+}
+
+.pdright-small {
+    padding: 0px 5px 0px 0px;
+}
+
+.original {
+    overflow: auto;
+    background-color: #ffebee; // #e1e2e1 //#f9f9f9 //#ccb9bc
+    // border: 1px yellow solid
+}
+
+.openpreview {
+    height: 60%;
+}
+
+.closepreview {
+    height: calc(94%);
+}
+
+.split {
+    background-color: #e1e2e1; // #e9e9e9
+    display: flex;
+    align-items: center;
+    padding: 0px 2%;
+    height: 6%;
+    font-size: 5px;
+    justify-content: space-between;
+}
+
+.markdown {
+    height: 40%;
+    overflow-y: hidden;
+    // border: 1px solid red;
+}
+
+.editor {
+    height: calc(100% - 100px);
+    overflow-y: hidden;
+}
+
+.github {
+    text-align: left;
+    padding: 10px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #cccccc;
+}
+
+.markdown-body {
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 980px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .markdown-body {
+        padding: 10px;
+    }
+}
+
+.notem {
+    margin: 0 4%;
+}
+
+.pviewscroll {
+    overflow-y: auto;
+    padding: 3%;
+    height: 100%;
+    // border 2px green solid
+}
+
+.minimize {
+    height: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tosec {
+    border: 1px solid #e9e9e9;
+    margin: 0px 5px 0px 0px;
+    padding: 0px 1px;
+    border-radius: 20%;
+    background-color: #e7ae79;
+}
+
+.fullnote {
+    margin-bottom: 10px;
+}
+
+.close {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.note-textarea {
+    overflow-y: hidden;
+}

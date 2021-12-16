@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css');
+
+.container {
+    width: 100%;
+    max-width: 122.5rem;
+}
+
+.footer {
+    padding-top: 2rem;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.back-to-top {
+    width: 3.4rem;
+    height: 3.4rem;
+    background-color: #121212;
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.back-to-top i {
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+.back-to-top i:hover {
+    animation: up 2s infinite;
+}
+
+.footer-content {
+    overflow: hidden;
+}
+
+.footer-content h4 {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+}
+
+.footer-content .asterisk {
+    margin: 2.4rem 0;
+    font-size: 1.6rem;
+}
+
+.footer-content-about {
+    margin-bottom: 5.4rem;
+}
+
+.footer-content-about pre {
+    line-height: 2;
+}
+
+.social-icons {
+    list-style: none;
+    margin-bottom: 2.7rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 2rem;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    opacity: 0.5;
+    transition: color 0.5s;
+}
+
+.social-icons i:hover, .social-icons i:focus {
+    color: var(#cebea8);
+}
+
+.newsletter-form {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-input {
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+}
+
+.newsletter-btn {
+    background-color: transparent;
+    border: none;
+    color: var(#252525);
+    cursor: pointer;
+    padding: 0px 0.6rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    // margin-left: 10.5rem;
+    right: 15%;
+}
+
+.footer-content {
+    max-width: 77.5rem;
+    margin: auto;
+}
+
+.footer-content-about {
+    max-width: 51.3rem;
+    margin: 0 auto 5.4rem;
+}
+
+.footer-content-divider {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter-container {
+    width: 50rem;
+}
+
+.social-media, .newsletter-form {
+    width: 100%;
+    max-width: 37.3rem;
+    margin: 0 1rem;
+}
+
+.social-icons i {
+    opacity: 1;
+}
+
+.newsletter-btn {
+    margin-left: 7.5rem;
+}
+
+@keyframes up {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+}
+
+a {
+    text-decoration: none;
+}

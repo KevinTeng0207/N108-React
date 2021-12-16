@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import VideoComment from './VideoComment'
+// import VideoComment from './VideoComment'
 import noteimg from '../../image/note.png'
 import addimg from '../../image/add.png'
 import queryString from 'query-string'
@@ -201,7 +201,7 @@ export default class Watch extends Component {
         let { v } = queryString.parse(this.props.location.search); // VID
         return (
             <div id="watch">
-                <VideoComment ytinfo={ytinfo} oid={v}></VideoComment>
+                {/* <VideoComment ytinfo={ytinfo} oid={v}></VideoComment> */}
                 <Note oid={v} keyLock={this.keyLock} toSec={this.toSec} delNote={this.delNote} focusnid={focusnid}></Note>
                 <div className="noteimg pointer noteposition" onClick={(e) => this.ocNote()} title="關閉/開啟筆記">
                     <img src={noteimg} width="25px" height="25px"></img>

@@ -44,7 +44,7 @@ export default class login extends Component {
 
     gotogoogle = async () => {
         let data = await api({
-            cmd: "Auth//google/url",
+            cmd: "Auth/google/url",
             method: "get"
         })
         // console.log(data.body)
@@ -53,7 +53,7 @@ export default class login extends Component {
 
     gotofacebook = async () => {
         let data = await api({
-            cmd: "Auth//facebook/url",
+            cmd: "Auth/facebook/url",
             method: "get"
         })
         // console.log(data.body)

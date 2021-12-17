@@ -1,4 +1,4 @@
 {
-    "apiurl": "https://n108.wke.csie.ncnu.edu.tw:8888",
+    "apiurl": "http://10.21.26.241:8888",
     "cors": true
 }

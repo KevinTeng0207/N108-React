@@ -8,23 +8,23 @@ export default class Exam extends Component {
         super(props);
         this.state = {
             data: [],
-            hide_sidebar: true,
+            isLoaded: false,
             isSelect: false,
             selectData: [],
         };
     }
 
     get_api = async () => {
-        let sidebar = await api({
+        let data = await api({
             cmd: "Exam/examlist",
             method: "get"
         })
-        sidebar = sidebar.body
-        // console.log(sidebar)
+        data = data.body
+        // console.log(data)
         this.setState({
             isSelect: false,
             selectData: [],
-            data: sidebar,
+            data: data,
         });
 
     }
@@ -61,27 +61,9 @@ export default class Exam extends Component {
         })
     }
 
-    click_sidebar = () => {
-        this.setState({
-            hide_sidebar: !this.state.hide_sidebar
-        })
-    }
-
-    open_sidebar = () => {
-        this.setState({
-            hide_sidebar: true
-        })
-    }
-
-    close_sidebar = () => {
-        this.setState({
-            hide_sidebar: false
-        })
-    }
-
     render() {
         const { login, info, getuserimg, userimg } = this.props
-        const { data, hide_sidebar, isSelect, selectData } = this.state;
+        const { data, isSelect, selectData } = this.state;
         const schoolname = queryString.parse(this.props.location.search).school
         return (
             <div>

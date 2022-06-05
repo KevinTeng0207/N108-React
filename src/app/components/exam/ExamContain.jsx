@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import api from '../../lib/api.js'
-import Exam from './ExamWrapper'
 import { NavLink } from 'react-router-dom'
-// import Chart from "react-google-charts";
 import ReactLoading from "react-loading";
 import back from '../../image/go-back-arrow.png'
 import back2 from '../../image/go-back-arrow2.png'
@@ -21,16 +19,16 @@ export default class ExamContain extends Component {
 
     get_api = async () => {
         const { selectData } = this.props
-        let sidebar = await api({
+        let data = await api({
             cmd: "Exam/exam?type=" + selectData.type,
             method: "get"
         })
-        sidebar = sidebar.body
-        // console.log(sidebar)
+        data = data.body
+        console.log(data)
         this.setState({
-            data: sidebar,
+            data: data,
             pageNumber: 1,
-            TotalPageNumber: Math.ceil(sidebar.length / 4)
+            TotalPageNumber: Math.ceil(data.length / 4)
         });
 
     }

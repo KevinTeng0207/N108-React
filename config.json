@@ -1,6 +1,6 @@
 {
     "apiurl2": "",
-    "apiurl": "",
+    "apiurl": "http://localhost:8888",
     "title": "EDU Science",
     "cors": true
 }

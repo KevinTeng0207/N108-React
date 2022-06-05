@@ -7,6 +7,7 @@ class LearnSiderbarContent extends Component {
         super(props);
         this.state = {
             data: [],
+            isLoaded: false
         };
     }
 
@@ -18,7 +19,7 @@ class LearnSiderbarContent extends Component {
             method: "get"
         })
         data = data.body
-        // console.log(data)
+        console.log(data)
         this.setState({
             data: data,
         });
@@ -58,6 +59,7 @@ class LearnSiderbarContent extends Component {
 
     content(data, contentID, Set_contentValue) {
         let temp = ""
+        console.log(data)
         const bar = []
         for (let i = 0; i < data.length; i++) {
             if (temp != data[i].title) {

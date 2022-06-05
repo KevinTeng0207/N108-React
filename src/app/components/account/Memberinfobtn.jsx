@@ -12,12 +12,12 @@ export default class MemberinfoBtn extends Component {
     }
 
     componentDidUpdate = async (prevProps, prevState) => {
-        const { type, data, userinfo } = this.props
+        const { type, data, userinfoapi } = this.props
         // console.log(type + ' DidUpdate')
         if (prevState.input != this.state.input && this.state.input == true) {
             document.getElementById(`set${type}`).focus();
             this.input.current.value = (data == null ? null : data)
-            await userinfo()
+            await userinfoapi()
         }
     }
 
@@ -29,7 +29,7 @@ export default class MemberinfoBtn extends Component {
 
     enter = async (e) => {
         if (e.keyCode == 13) {
-            console.log('hihi')
+            // console.log('hihi')
             await this.closesetting();
         }
     }

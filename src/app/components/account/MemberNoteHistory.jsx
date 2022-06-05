@@ -9,7 +9,7 @@ export default class MemberNoteHistory extends Component {
         this.state = {
             note: [],
             open: false,
-            hover: false
+            isLoaded: false
         }
         this.scrollpos = React.createRef();
     }
@@ -94,7 +94,7 @@ export default class MemberNoteHistory extends Component {
 
     render() {
         const { OID, notecount, CDes, CName } = this.props
-        const { open, note, hover, subject } = this.state
+        const { open, note, subject } = this.state
         return (
             <div>
                 <li className="notelist dis-flex-row mouse" ref={this.scrollpos} onClick={this.openclick}>

@@ -7,8 +7,6 @@ export default class Memberinfo extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            topbarshowIMG: false,
-            uploadwrapper: false,
             isLoaded: false,
             Userinfo: []
         }

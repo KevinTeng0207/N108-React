@@ -3,6 +3,7 @@ import api from '../../lib/api'
 import ReactLoading from "react-loading";
 import '../../styles/Bootstrap.styl'
 import Thumbnails from './Thumbnails'
+
 export default class YT_flame extends Component {
     constructor(props) {
         super(props);
@@ -33,7 +34,7 @@ export default class YT_flame extends Component {
         data = data.body
         data2 = data2.body
         data3 = data3.body
-        // console.log(data)
+        console.log(data)
         // console.log(data2)
         // console.log(data3)
         this.setState({
@@ -70,7 +71,7 @@ export default class YT_flame extends Component {
     render() {
         // console.log('YTlist render')
         const { error, isLoaded } = this.state;
-        console.log(window.screen.width)
+        // console.log(window.screen.width)
         if (error)
             return <div>Error: {error.message}</div>;
         else if (!isLoaded) {
@@ -127,7 +128,6 @@ export default class YT_flame extends Component {
                                     />
                                 )}
                             </ul>
-
                         </div>
                     </div>
                 </div>

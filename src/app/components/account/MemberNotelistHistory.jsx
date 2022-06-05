@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import api from '../../lib/api'
-import Notecontent from './MemberNotehistory'
+import Notehistory from './MemberNotehistory'
 
 export default class MemberNotelistHistory extends Component {
     constructor(props) {
@@ -54,7 +54,7 @@ export default class MemberNotelistHistory extends Component {
                     </div>
                     <div>
                         <ul>
-                            {note.map(n => <Notecontent key={n.OID} OID={n.OID} CName={n.CName} CDes={n.CDes} notecount={n.notecount}></Notecontent>)}
+                            {note.map(n => <Notehistory key={n.OID} OID={n.OID} CName={n.CName} CDes={n.CDes} notecount={n.notecount}></Notehistory>)}
                         </ul>
                     </div>
                 </div>

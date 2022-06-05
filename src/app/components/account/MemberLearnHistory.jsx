@@ -9,7 +9,6 @@ export default class MemberLearnHistory extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            date: [],
             data: [],
             showlist: [],
             isLoaded: false,
@@ -23,7 +22,7 @@ export default class MemberLearnHistory extends Component {
     }
 
     CalendarHeatmapdata(data) {
-        //CalendarHeatmap 符合的資料格式
+        // CalendarHeatmap 符合的資料格式
         let finaldate = []
         const { year, today } = this.state.now
         let m = today.getMonth() + 1
@@ -61,7 +60,6 @@ export default class MemberLearnHistory extends Component {
         })
         data = data.body
         let historydata = []
-
         for (var i = 0; i < data.length; i++) {
             historydata.push({
                 cname: data[i].CName,
@@ -69,7 +67,7 @@ export default class MemberLearnHistory extends Component {
                 oid: data[i].OID
             })
         }
-        // console.log(historydata)
+        console.log(historydata)
         this.setState({
             data: historydata
         });
@@ -136,7 +134,8 @@ export default class MemberLearnHistory extends Component {
                             <h3 className="dis-center" style={{ "marginTop": "8px", "color": "#1abc81" }}>Loading ...</h3>
                         </div>
                     </div>
-                </div>)
+                </div>
+            )
         }
         else {
             return (

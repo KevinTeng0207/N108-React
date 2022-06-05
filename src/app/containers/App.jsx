@@ -26,7 +26,7 @@ export class App extends Component {
                     method: "get"
                 })
                 data = data.body
-                // console.log(data[0])
+                console.log(data[0])
                 if (data[0]) {
                     this.setState({
                         userimg: apiurl + "/fileStorage/" + IDtopath(data[0].OID2) + data[0].FileExtension

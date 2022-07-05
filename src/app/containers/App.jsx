@@ -69,7 +69,7 @@ export class App extends Component {
             method: "get",
         })
         info = info.body
-        // console.log(info)
+        console.log(info)
         if (info[0] != null) {
             await this.getuserimg(info[0].sso)
             this.setState({

@@ -236,7 +236,7 @@ export default class ExamWrapper extends Component {
                                 }
                                 {
                                     login && submit &&
-                                    <Detail data={data} getstr={this.getstr} ans={inputSet}
+                                    <Detail data={data} getstr={this.getstr} inputSet={inputSet}
                                         myans={myAns} ansset={ansset} f5check={this.f5check}>
                                     </Detail>
                                 }
@@ -265,7 +265,6 @@ export default class ExamWrapper extends Component {
                                                             <div></div>
                                                         </div>
                                                     </div>
-
                                                 </div>
                                             </div>
                                         </div>

@@ -6,7 +6,7 @@ export default class issue extends Component {
     issue = async () => {
         var yes = confirm('你確定要提交issue嗎？\n (此題目將不再提供)')
         if (yes) {
-            const { pid, get_api_img} = this.props
+            const { pid, get_api_img } = this.props
             let data = await api({
                 cmd: "Exam/issue",
                 method: "put",
@@ -21,7 +21,13 @@ export default class issue extends Component {
 
     render() {
         return (
-            <img className="issue mouse" src={img} alt="" style={{ "width": "32px" }} onClick={this.issue} />
+            <img
+                className="issue mouse"
+                src={img}
+                alt=""
+                style={{ "width": "32px" }}
+                onClick={this.issue}
+            />
         )
     }
 }

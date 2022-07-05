@@ -24,30 +24,17 @@ export default class Detail extends Component {
         })
     }
 
-    problemList() {
-        const { data, ans, myans, ansset } = this.props
-        let problemlist = []
-        for (var i = 0; i < data.length; i++) {
-            let str = this.props.getstr(data[i])
-            let YorN = (ans[i] == 'yes' ? true : false)
-            problemlist.push(
-                <div className={`problem-containter ${YorN ? "yes" : "no"}`} key={data[i].pid}>
-                    <div className="inputa">你的答案：{myans[i][1]}</div>
-                    <div className="outputa">正確答案：{ansset[i]}</div>
-                    <Problem_img str={str}></Problem_img>
-                    <Detail_btn OverFlow={this.OverFlow} pid={data[i].pid}></Detail_btn>
-                </div>
-            )
-        }
-        return problemlist
-    }
-
-
     render() {
-        const DetailList = this.problemList()
+        const { data, inputSet, myans, ansset, getstr } = this.props
         return (
             <div className={`total ${this.state.showoverflow ? "" : " hidden"}`}>
-                {DetailList}
+                {data.map((d, i) =>
+                    <div className={`problem-containter ${(inputSet[i] == 'yes') ? "yes" : "no"}`} key={d.pid}>
+                        <div className="inputa">你的答案：{myans[i][1]}</div>
+                        <div className="outputa">正確答案：{ansset[i]}</div>
+                        <Problem_img str={getstr(d)}></Problem_img>
+                        <Detail_btn OverFlow={this.OverFlow} pid={d.pid}></Detail_btn>
+                    </div>)}
             </div>
         )
     }

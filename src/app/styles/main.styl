@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+*:before, *:after {
+    box-sizing: inherit;
+}
+
 :root {
     --maxwidth: calc((100vh - 80px) / 9 * 16);
     --maxheight: calc(100vh - 80px);
@@ -59,9 +63,7 @@
     background-color: #b8b8b8;
 }
 
-*:before, *:after {
-    box-sizing: inherit;
-}
+
 
 body {
     height: calc(100vh);
@@ -88,7 +90,7 @@ div {
     display: block;
 }
 
-.none {
+.none, .dis-no  {
     display: none;
 }
 
@@ -98,10 +100,6 @@ div {
 
 .float-l {
     float: left;
-}
-
-.dis-no {
-    display: none;
 }
 
 .dis-center {
